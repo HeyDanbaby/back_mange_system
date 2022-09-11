@@ -5,29 +5,30 @@
       background-color="#636e72"
       text-color="#fff"
       active-text-color="#f1c40f"
+      :router="true"
     >
-      <el-menu-item index="1">
+      <el-menu-item index="home">
         <i class="el-icon-menu"></i>
         <span slot="title">首页</span>
       </el-menu-item>
 
-      <el-menu-item index="2">
+      <el-menu-item index="productManage">
         <i class="el-icon-document"></i>
         <span slot="title">商品管理</span>
       </el-menu-item>
 
-      <el-menu-item index="3">
+      <el-menu-item index="userManage">
         <i class="el-icon-setting"></i>
         <span slot="title">用户管理</span>
       </el-menu-item>
 
-      <el-submenu index="4">
+      <el-submenu index="other">
         <template slot="title">
           <i class="el-icon-location"></i>
           <span>其他</span>
         </template>
-        <el-menu-item index="1-1">选项1</el-menu-item>
-        <el-menu-item index="1-2">选项2</el-menu-item>
+        <el-menu-item index="otherOne">选项1</el-menu-item>
+        <el-menu-item index="otherTwo">选项2</el-menu-item>
       </el-submenu>
     </el-menu>
   </div>
@@ -49,10 +50,10 @@ export default {};
   text-align: center;
   padding-top: 10px;
 }
-.is-opened .el-submenu__title span{
-  color: #f1c40f; 
+.is-opened .el-submenu__title span {
+  color: #f1c40f;
 }
-.el-menu{
+.el-menu {
   border-right: none;
 }
 </style>

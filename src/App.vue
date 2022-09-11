@@ -5,7 +5,7 @@
     </div>
     <div class="right">
       <Header></Header>
-      <router-view></router-view>
+      <router-view class="router-view"></router-view>
     </div>
   </div>
 </template>
@@ -25,5 +25,10 @@ export default {
   .right {
     width: 100%;
   }
+}
+.router-view {
+  display: flex;
+  box-sizing: border-box;
+  height: calc(100% - 80px);
 }
 </style>
