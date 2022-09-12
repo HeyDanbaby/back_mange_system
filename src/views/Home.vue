@@ -20,7 +20,7 @@
       <el-card class="tableCard">
         <el-table style="width: 100%" :data="tableData">
           <el-table-column prop="brand" label="课程"> </el-table-column>
-          <el-table-column prop="todayBuy" label="节日购买"> </el-table-column>
+          <el-table-column prop="todayBuy" label="今日购买"> </el-table-column>
           <el-table-column prop="mBuy" label="本月购买"> </el-table-column>
           <el-table-column prop="totalBuy" label="总购买"> </el-table-column>
         </el-table>
